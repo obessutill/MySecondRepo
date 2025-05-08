@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 320px;
+    position: absolute;
+    padding: 24px;
+    padding-top: 23px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.sidebar__header a {
+    display: inline-block;
+}
+
+.sidebar__header-icon {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar__header-icon:first-child {
+    margin-right: 16px;
+}
+
+.sidebar__header-logo {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 78px;
+    width: 97px;
+    height: 51px;
+}
+
+.sidebar__header-icon:hover {
+    opacity: 0.5;
+}
+
+.cancel-icon {
+    background: url("./images/cancel.svg") no-repeat 0 0;
+}
+
+.logo-icon {
+    background: url("./images/logo.svg") no-repeat 0 0;
+}
+
+.search-icon {
+    background: url("./images/search.svg") no-repeat 0 0;
+}
+
+.sidebar__menu {
+    margin-bottom: 270px;
+}
+
+.sidebar__menu-item {
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    color: #1B1C21;
+    margin-bottom: 32px;
+    transition: all 0.1s ease;
+}
+
+.sidebar__menu-item:hover {
+    opacity: 0.5;
+    transform: scale(1.02);
+}
+
+.sidebar__menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar__menu-item--current {
+    color: #7E7E82;
+    position: relative;
+}
+
+.sidebar__menu-item--current:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sidebar__menu-item--current::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    border-radius: 10px;
+}
+
+.sidebar__footer-menu {
+    margin-bottom: 16px;
+}
+
+.sidebar__footer-icon {
+    text-decoration: none;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 16px;
+    transition: all 0.3s ease;
+}
+
+.sidebar__footer-icon:hover {
+    opacity: 0.5;
+}
+
+.sidebar__footer-icon:last-child {
+    margin-right: 0;
+}
+
+.call-icon {
+    background: url("./images/call.svg") no-repeat 0 0;
+}
+
+.chat-icon {
+    background: url("./images/chat.svg") no-repeat 0 0;
+}
+
+.profile-icon {
+    background: url("./images/profile.svg") no-repeat 0 0;
+}
+
+.sidebar__footer-email {
+    text-decoration: none;
+    list-style: none;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.1s ease;
+}
+
+.sidebar__footer-email:hover {
+    opacity: 0.5;
+    transform: scale(1.02);
+}
+
+.sidebar__footer-phone {
+    text-decoration: none;
+    list-style: none;
+    color: #1B1C21;
+    font-family: "TT Lakes DemiBold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 40px;
+    transition: all 0.1s ease;
+}
+
+.sidebar__footer-phone:hover {
+    opacity: 0.5s;
+    transform: scale(1.02);
+}
+
+.sidebar__footer-language {
+    text-decoration: none;
+    list-style: none;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.1s ease;
+}
+
+.sidebar__footer-language:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.sidebar__footer-language--current {
+    color: #7E7E82;
+}
+
+.sidebar__footer-language--current:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TTLakes-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes DemiBold";
+    src: url("./fonts/TTLakes-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
