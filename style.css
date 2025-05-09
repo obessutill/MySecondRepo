@@ -47,15 +47,15 @@ body {
     opacity: 0.5;
 }
 
-.cancel-icon {
+.sidebar__header-icon--back {
     background: url("./images/cancel.svg") no-repeat 0 0;
 }
 
-.logo-icon {
+.sidebar__header-logo--logo-icon {
     background: url("./images/logo.svg") no-repeat 0 0;
 }
 
-.search-icon {
+.sidebar__header-icon--search {
     background: url("./images/search.svg") no-repeat 0 0;
 }
 
@@ -63,7 +63,17 @@ body {
     margin-bottom: 270px;
 }
 
+.sidebar__menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .sidebar__menu-item {
+    margin-bottom: 32px;
+}
+
+.sidebar__menu-link {
     font-family: "TT Lakes";
     font-size: 16px;
     font-weight: 500;
@@ -72,30 +82,29 @@ body {
     text-decoration: none;
     display: block;
     color: #1B1C21;
-    margin-bottom: 32px;
     transition: all 0.1s ease;
 }
 
-.sidebar__menu-item:hover {
+.sidebar__menu-link:hover {
     opacity: 0.5;
     transform: scale(1.02);
 }
 
-.sidebar__menu-item:last-child {
+.sidebar__menu-link:last-child {
     margin-bottom: 0;
 }
 
-.sidebar__menu-item--current {
+.sidebar__menu-link--current {
     color: #7E7E82;
     position: relative;
 }
 
-.sidebar__menu-item--current:hover {
+.sidebar__menu-link--current:hover {
     opacity: 1;
     transform: scale(1);
 }
 
-.sidebar__menu-item--current::before {
+.sidebar__menu-link--current::before {
     content: "";
     display: inline-block;
     width: 4px;
@@ -177,7 +186,17 @@ body {
     transform: scale(1.02);
 }
 
-.sidebar__footer-language {
+.sidebar__footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar__footer-item {
+    display: inline-block;
+}
+
+.sidebar__footer-link {
     text-decoration: none;
     list-style: none;
     color: #1B1C21;
@@ -189,16 +208,16 @@ body {
     transition: all 0.1s ease;
 }
 
-.sidebar__footer-language:hover {
+.sidebar__footer-link:hover {
     opacity: 0.5;
     text-decoration: underline;
 }
 
-.sidebar__footer-language--current {
+.sidebar__footer-link--current {
     color: #7E7E82;
 }
 
-.sidebar__footer-language--current:hover {
+.sidebar__footer-link--current:hover {
     opacity: 1;
     text-decoration: none;
 }
